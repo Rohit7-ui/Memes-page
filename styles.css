@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#memeFilters {
+    margin: 20px 0;
+}
+
+.filter {
+    background-color: #28a745;
+}
+
+.filter:hover {
+    background-color: #218838;
+}
+
+#memeContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.meme {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.meme:hover {
+    transform: scale(1.05);
+}
+
+.meme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#loadMore {
+    display: none;
+    margin: 20px auto;
+}
+
+/* Meme Editor Styles */
+#memeEditor {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#uploadMeme {
+    margin-bottom: 10px;
+}
+
+#memeCanvas {
+    border: 2px solid #000;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+#memeCaption {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#generateCaption {
+    background-color: #ff9800;
+}
+
+#generateCaption:hover {
+    background-color: #e68900;
+}

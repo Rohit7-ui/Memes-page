@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Meme Website</h1>
+        <button id="darkModeToggle">Dark Mode</button>
+    </header>
+    
+    <main>
+        <section id="memeFilters">
+            <button class="filter" data-category="trending">Trending</button>
+            <button class="filter" data-category="new">New</button>
+            <button class="filter" data-category="classic">Classic</button>
+            <button class="filter" data-category="random">Random</button>
+        </section>
+        
+        <section id="trending">
+            <h2>Memes</h2>
+            <div id="memeContainer"></div>
+            <button id="loadMore">Load More</button>
+        </section>
+
+        <section id="memeEditor">
+            <h2>Create Your Meme</h2>
+            <input type="file" id="uploadMeme" accept="image/*">
+            <canvas id="memeCanvas"></canvas>
+            <textarea id="memeCaption" placeholder="Enter your funny caption..."></textarea>
+            <button id="generateCaption">Generate AI Caption</button>
+            <button id="downloadMeme">Download Meme</button>
+        </section>
+    </main>
+</body>
+</html>
